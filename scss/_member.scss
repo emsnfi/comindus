@@ -1,11 +1,23 @@
 
 .imgUpload{
-    max-width: 250px;
-    max-height:200px;
+    width: 250px;
+    height:250px;
     //background-image: url("/Users/emily/Desktop/imgupload.png");  
     //background-size: contain;  
     font-size: 0px;
    // background-repeat: no-repeat;
     
     //cursor:pointer
+}
+
+.uploadbutton{
+    background: $gray-light;
+    border-radius:10px;
+    width:110px;
+    height:45px;
+
+    &:hover{
+        color: #1D3255
+        ;
+    }
 }

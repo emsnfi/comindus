@@ -10838,3 +10838,8 @@ a.text-dark:hover, a.text-dark:focus {
   color: white;
 }
 /*# sourceMappingURL=all.css.map */
+
+span{
+  color:red;
+  display: block;
+}

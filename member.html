@@ -65,7 +65,7 @@
 
       <div class="col-3 d-flex flex-column">
         <h6 class="title">會員中心</h6>
-       
+
         <div id="button">
           <img id="showimg" src="imgupload.png" class="imgUpload mb-3" />
           <button id="uploadb" class="uploadbutton">上傳大頭照</button>
@@ -76,52 +76,62 @@
 
       </div>
 
-      <div class="col-8">
-        <h6 class="font-weight-bolder">個人資料修改</h3>
-          <hr class="mt-2 border-grayinfo">
-          <form class="text-grayinfo">
-            <div class="form-group row">
-              <label for="userNumber" class="col-3 col-sm-2 col-form-label">會員帳號</label>
-              <div class="col-9 col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="userNumber" value="email@example.com">
-              </div>
+      <div class="col-9">
+        <h6 class="font-weight-bolder">個人資料修改</h6>
+        <hr class="mt-2 border-grayinfo">
+        <form class="text-grayinfo">
+          <div class="form-group row">
+            <label for="userNumber" class="col-3 col-sm-2 col-form-label">會員帳號</label>
+            <div class="col-9 col-sm-10">
+              <input type="text" readonly class="form-control-plaintext" id="userNumber" value="email@example.com">
             </div>
-            <div class="form-group row">
-              <label for="userName" class="col-3 col-sm-2 col-form-label">會員姓名</label>
-              <div class="col-6 col-sm-5">
-                <input type="text" class="form-control" id="userName" placeholder="">
-              </div>
+          </div>
+          <div class="form-group row">
+            <label for="userName" class="col-3 col-sm-2 col-form-label" required>會員暱稱</label>
+            <div class="col-6 col-sm-5">
+              <input type="text" class="form-control" id="userName" placeholder="" required>
+            </div>
+            <span id = "nameCheck"></span>
+          </div>
+
+          <div class="form-group row">
+            <label for="pwd" class="col-4 col-sm-2 col-form-label">密碼</label>
+            <div class="col-8 col-sm-5">
+              <input type="text" class="form-control" id="pwd" placeholder="">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="pwdCheck" class="col-4 col-sm-2 col-form-label">再輸入一次密碼</label>
+            <div class="col-8 col-sm-5">
+              <input type="text" class="form-control" id="pwdCheck" placeholder="">
+              <span id = "passCheck"></span>
+            </div>
+          </div>
+          
+          <div class="form-group row">
+            <label for="birthday" class="col-3 col-sm-2 col-form-label">出生日期</label>
+            <div class="col-6 col-sm-5">
+              <input type="text" class="form-control" id="birthday" placeholder="YYYY/MM/DD 例如：1980/01/01">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="gender" class="col-3 col-md-2 col-form-label">性別</label>
+            <div class="col-4 col-md-3">
+              <select class="form-control" id="gender">
+                <option>女</option>
+                <option>男</option>
+                <option>不願透露</option>
+              </select>
             </div>
 
-            <div class="form-group row">
-              <label for="pwd" class="col-3 col-sm-2 col-form-label">密碼</label>
-              <div class="col-6 col-sm-5">
-                <input type="text" class="form-control" id="pwd" placeholder="">
-              </div>
-            </div>
+          </div>
+          <div class="changeButton form-group d-felx mt-5 justify-content-end">
+            <button class="save mr-3">儲存</button>
+            <button class="cancel">取消</button>
+          </div>
 
-            <div class="form-group row">
-              <label for="birthday" class="col-3 col-sm-2 col-form-label">出生日期</label>
-              <div class="col-6 col-sm-5">
-                <input type="text" class="form-control" id="birthday" placeholder="YYYY/MM/DD 例如：1980/01/01">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="gender" class="col-3 col-md-2 col-form-label">性別</label>
-              <div class="col-4 col-md-3">
-                <select class="form-control" id="gender">
-                  <option>女</option>
-                  <option>男</option>
-                </select>
-              </div>
-             
-            </div>
-            <div class="changeButton form-group d-felx mt-5 justify-content-end">
-              <button class="save mr-3">儲存</button>
-              <button class="cancel">取消</button>
-            </div>
-
-
+        </form>
 
       </div>
 
